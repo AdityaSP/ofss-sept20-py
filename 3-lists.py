@@ -112,3 +112,21 @@ NameError: name 'b' is not defined
 >>> x
 'Thailand'
 >>> 
+
+>>> li  =['abc', 'eee', 'bcd', 'cde', 'edf', ['india', 'uk'], 'kkk', 'uk']
+>>> li.remove('india')
+Traceback (most recent call last):
+  File "<pyshell#66>", line 1, in <module>
+    li.remove('india')
+ValueError: list.remove(x): x not in list
+>>> li[-3]
+['india', 'uk']
+>>> li[-3].remove('india')
+>>> li
+['abc', 'eee', 'bcd', 'cde', 'edf', ['uk'], 'kkk', 'uk']
+>>> li = ['India', 'USA', 'Thailand', 'New Zealand']
+>>> li[-1].split()[-1]
+'Zealand'
+>>> li[-1].split()[-1].upper()
+'ZEALAND'
+>>> 
